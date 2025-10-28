@@ -1,2 +1,1 @@
-console.log(document.title);
-Document.getElementById("task1").innerText="Complete project documentation";
+document.getElementById("task1").innerText="Complete project documentation";
