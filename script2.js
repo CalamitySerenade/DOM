@@ -5,5 +5,7 @@ document.getElementById("addButton").innerHTML="add value"
 //Run a function
 document.getElementById("addButton").addEventListener("click",function(){
     let origin=document.getElementById("counter").innerHTML;
-    document.getElementById("addButton").innerHTML=origin;
+    console.log(origin);
+    origin=parseInt(origin)+1;
+    document.getElementById("counter").innerHTML=origin;
 })
