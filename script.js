@@ -14,3 +14,4 @@ document.getElementById("addTask").addEventListener("click",function(){
     event.preventDefault();
     document.getElementById("taskname3").textContent=document.getElementById("new-task").value; 
 });
+
