@@ -18,6 +18,7 @@ document.getElementById("multiplier table").addEventListener("click",function(){
     }
     document.getElementById("multiplier table").innerHTML=arr.join(" ");
 });
+document.getElementsByClassName("card")[0].style.borderRadius="8px";
 
 //Now, the card has a counter, it is functional, the card made has a functionality
 //Functionality being an increase of 1
@@ -31,6 +32,7 @@ document.getElementById("multiplier table").addEventListener("click",function(){
 //by using ClassName, you can target a specific card
 
 document.getElementsByClassName("card")[1].style.backgroundColor="Tan";
+document.getElementsByClassName("card")[1].style.borderRadius="8px";
 document.getElementById("multiplier table").addEventListener("click",function(){
     let arr=[];
     for(let a=1;a<=10;a++){
@@ -39,4 +41,3 @@ document.getElementById("multiplier table").addEventListener("click",function(){
         document.getElementById(a).innerHTML=mult;
     }
 });
-
