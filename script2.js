@@ -11,12 +11,12 @@ document.getElementById("addButton").addEventListener("click",function(){
 });
 
 document.getElementById("multiplier table").addEventListener("click",function(){
-    let origin2=document.getElementById("count").innerHTML;
+    let origin = document.getElementById("counter").innerHTML;
     let arr=[];
-    for(let a=1;a<5;a++){
-        arr.push(parseInt(origin2)*(a+1));
+    for(let a =0;a<5;a++){
+        arr.push(parseInt(origin)*(a+1));
     }
-    document.getElementById(table);
+    document.getElementById("multiplier table").innerHTML=arr.join(" ");
 });
 
 //Now, the card has a counter, it is functional, the card made has a functionality
@@ -30,4 +30,12 @@ document.getElementById("multiplier table").addEventListener("click",function(){
 //elementsByClassName follows same rules as getElementByTagName
 //by using ClassName, you can target a specific card
 
-document.getElementsByClassName("card")[1].style.backgroundColor="#000";
+document.getElementsByClassName("card")[1].style.backgroundColor="Tan";
+document.getElementById("multiplier table").addEventListener("click",function(){
+    let arr=[];
+    for(let a=1;a<=10;a++){
+        let mult=a*counter.innerHTML;
+        console.log(mult);
+        document.getElementById(a).innerHTML=mult;
+    }
+});
