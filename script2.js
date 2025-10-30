@@ -39,3 +39,4 @@ document.getElementById("multiplier table").addEventListener("click",function(){
         document.getElementById(a).innerHTML=mult;
     }
 });
+
