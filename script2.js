@@ -43,7 +43,3 @@ document.getElementById("multiplier table").addEventListener("click",function(){
         document.getElementById(a).innerHTML=mult;
     }
 });
-
-//Binary Value Card
-document.getElementsByClassName("binary")[0].style.backgroundColor="Tan";
-document.getElementsByClassName("binary")[0].style.borderRadius="8px";
