@@ -33,6 +33,8 @@ document.getElementsByClassName("card")[0].style.borderRadius="8px";
 
 document.getElementsByClassName("card")[1].style.backgroundColor="Tan";
 document.getElementsByClassName("card")[1].style.borderRadius="8px";
+
+//Multiplication card
 document.getElementById("multiplier table").addEventListener("click",function(){
     let arr=[];
     for(let a=1;a<=10;a++){
@@ -41,3 +43,7 @@ document.getElementById("multiplier table").addEventListener("click",function(){
         document.getElementById(a).innerHTML=mult;
     }
 });
+
+//Binary Value Card
+document.getElementsByClassName("binary")[0].style.backgroundColor="Tan";
+document.getElementsByClassName("binary")[0].style.borderRadius="8px";
