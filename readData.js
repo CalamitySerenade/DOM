@@ -9,8 +9,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
   fetch("https://jsonplaceholder.typicode.com/posts")
   .then(response => console.log(response.status))
 
-
-  //Async function
+  //Try-catch
   try {
     fetch("https://jsonplaceholder.typicode.com/users")
     .then(response => response.json())
@@ -18,4 +17,22 @@ fetch("https://jsonplaceholder.typicode.com/users")
   } catch (error) {
     console.log(error);
   }
-  
+
+  //Async-await
+
+  async function getData(){
+    //Note: await needs to wait for the promise to resolve
+    //Note: fetch returns a promise
+    //I have to define what is response here
+    try{
+      const response=await fetch("https://jsonplaceholder.typicode.com/users");
+      const data=await response.json();
+      console.log(data);
+    }
+    catch(error){
+      console.log(error);
+    }
+  }
+
+  //Call the function to see the results
+  getData();
