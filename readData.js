@@ -18,3 +18,4 @@ fetch("https://jsonplaceholder.typicode.com/users")
   } catch (error) {
     console.log(error);
   }
+  
